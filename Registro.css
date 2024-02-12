@@ -14,6 +14,24 @@ h1, p {
   text-align: center;
 }
 
+/* Rectángulo semi-transparente detrás del título */
+h1 {
+  position: relative;
+  z-index: 1;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+  z-index: -1;
+}
+
 form {
   background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
   width: 60vw;
@@ -82,7 +100,6 @@ input[type="file"] {
 a {
   color:#a52019;
 }
-
 
 #textarea::placeholder {
   color: white;
