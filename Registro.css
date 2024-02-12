@@ -101,3 +101,6 @@ input[type="radio"] {
   vertical-align: middle;
 }
 
+textarea::placeholder {
+  color: #ffffff; /* Cambiar el color del marcador de posición a blanco */
+}
