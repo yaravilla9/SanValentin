@@ -85,4 +85,19 @@ select {
   border: 1px solid #a52019;
 }
 
-/* Cambiar el color del marcador de posición solo pa
+/* Alineación de los botones de radio y los textos */
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+.inline label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em; /* Espacio entre el botón de radio y el texto */
+}
+
+/* Alineación del cuadro de aceptar condiciones */
+#terms-and-conditions {
+  vertical-align: middle;
+}
+
