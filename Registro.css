@@ -26,8 +26,26 @@ h1::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 50%;
   height: 50px;
+  background-color: rgba(255, 200, 200, 0.5); /* Blanco semi-transparente */
+  z-index: -1;
+}
+
+/* Rectángulo semi-transparente detrás del texto de abajo */
+p {
+  position: relative;
+  z-index: 1;
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50px; /* Ajusta la altura según sea necesario */
   background-color: rgba(255, 200, 200, 0.5); /* Blanco semi-transparente */
   z-index: -1;
 }
@@ -67,40 +85,4 @@ select {
   border: 1px solid #a52019;
 }
 
-/* Cambiar el color del marcador de posición solo para el textarea */
-textarea::placeholder {
-  color: #ffffff; /* Blanco */
-}
-
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
-}
-
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #a52019;
-  border-color: #a52019;
-  min-width: 300px;
-}
-
-input[type="file"] {
-  padding: 1px 2px;
-}
-
-.inline{
-  display: inline; 
-}
-
-a {
-  color:#a52019;
-}
-
-#textarea::placeholder {
-  color: white;
-}
+/* Cambiar el color del marcador de posición solo pa
