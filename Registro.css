@@ -1,5 +1,3 @@
-/* Estilos para la página de registro de San Valentín */
-
 /* Estilos generales */
 body {
   width: 100%;
@@ -15,6 +13,30 @@ body {
 h1, p {
   margin: 1em auto;
   text-align: center;
+}
+
+/* Rectángulo semi-transparente detrás del título */
+h1 {
+  position: relative;
+  z-index: 1;
+}
+
+h1::before,
+p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 50px;
+  background-color: rgba(255, 200, 200, 0.5); /* Blanco semi-transparente */
+  z-index: -1;
+}
+
+/* Rectángulo semi-transparente detrás del texto de abajo */
+p {
+  position: relative;
 }
 
 /* Estilos del formulario */
@@ -58,13 +80,6 @@ textarea::placeholder {
   color: #ffffff; /* Blanco */
 }
 
-/* Ajuste de estilos para los botones de radio */
-input[type="radio"],
-label[for="personal-account"],
-label[for="business-account"] {
-  margin-top: 10px; /* Ajustar el margen superior de los botones de radio y las etiquetas */
-}
-
 /* Estilos para el botón de enviar */
 input[type="submit"] {
   display: block;
@@ -91,7 +106,14 @@ a {
   color: white;
 }
 
+/* Ajustes para los botones de radio */
+input[type="radio"],
+label[for="personal-account"],
+label[for="business-account"] {
+  margin-top: 0; /* Eliminar el margen superior */
+}
 
-textarea::placeholder {
-  color: #ffffff; /* Cambiar el color del marcador de posición a blanco */
+/* Ajuste para la casilla de verificación de los términos y condiciones */
+#terms-and-conditions {
+  vertical-align: middle; /* Alinear verticalmente */
 }
