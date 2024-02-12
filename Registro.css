@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: Tahoma;
   font-size: 16px;
+  backcground-color: #ffb3b3;
 }
 
 h1, p {
@@ -13,6 +14,7 @@ h1, p {
 
 form {
   background-image: url("https://images.pexels.com/photos/6478861/pexels-photo-6478861.jpeg");
+  background-size: cover;
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
