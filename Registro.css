@@ -6,7 +6,7 @@ body {
   font-size: 18px;
   background-image: url("https://images.pexels.com/photos/6478861/pexels-photo-6478861.jpeg");
   background-size: cover;
-  background-color: #ffb3b3;
+  background-color: #ffb3b3; /* Fondo rosa */
 }
 
 h1, p {
@@ -15,7 +15,7 @@ h1, p {
 }
 
 form {
-  background-color: #ffb3b3;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
@@ -45,11 +45,13 @@ select {
   width: 100%;
   min-height: 2em;
   background-color: #a52019;
+  color: #ffffff;
+  border: 1px solid #a52019;
 }
 
-input, textarea {
-  border: 1px solid #a52019;
-  color: #ffffff;
+/* Cambiar el color del marcador de posición solo para el textarea */
+textarea::placeholder {
+  color: #ffffff; /* Blanco */
 }
 
 .inline {
@@ -80,6 +82,7 @@ input[type="file"] {
 a {
   color:#a52019;
 }
+
 
 #textarea::placeholder {
   color: white;
